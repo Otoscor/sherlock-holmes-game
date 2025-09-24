@@ -16,7 +16,7 @@ export default defineConfig({
     },
   },
   define: {
-    'import.meta.env.VITE_GEMINI_API_KEY': JSON.stringify('AIzaSyCFhTg-cnwD6gBy-VTB78iNyhb5zWShMt8'),
-    'import.meta.env.VITE_AI_MODEL': JSON.stringify('gemini-1.5-flash')
+    'import.meta.env.VITE_GEMINI_API_KEY': JSON.stringify(process.env.VITE_GEMINI_API_KEY || 'AIzaSyCFhTg-cnwD6gBy-VTB78iNyhb5zWShMt8'),
+    'import.meta.env.VITE_AI_MODEL': JSON.stringify(process.env.VITE_AI_MODEL || 'gemini-1.5-flash')
   }
 })
