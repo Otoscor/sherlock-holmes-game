@@ -28,7 +28,7 @@ const initialGameState: GameState = {
   completedKeywords: [] // 🆕 빈 배열로 시작
 }
 
-export const useGameState = (caseId?: string) => {
+export const useGameState = (_caseId?: string) => {
   const [gameState, setGameState] = useState<GameState>(initialGameState)
   const conversationHistory = useRef<AIMessage[]>([])
 

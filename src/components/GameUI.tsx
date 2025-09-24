@@ -22,7 +22,7 @@ const GameUI: React.FC<GameUIProps> = ({
   onBackToMenu,
   onRequestHint, // 🆕 힌트 요청 함수
   isInputDisabled = false,
-  evidence = [], // eslint-disable-line @typescript-eslint/no-unused-vars
+  evidence: _evidence = [],
   score = 0,
   hintsUsed = 0, // 🆕 힌트 사용 횟수
   storyProgress = 0

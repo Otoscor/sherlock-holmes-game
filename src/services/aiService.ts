@@ -173,7 +173,7 @@ ${historyText ? `이전 대화:\n${historyText}\n` : ''}
     return responseText
   }
 
-  private async callAnthropic(messages: AIMessage[]): Promise<string> {
+  private async callAnthropic(_messages: AIMessage[]): Promise<string> {
     // Anthropic API 구현 (필요시)
     throw new Error('Anthropic API는 아직 구현되지 않았습니다.')
   }
