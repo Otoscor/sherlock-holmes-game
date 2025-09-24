@@ -1,0 +1,120 @@
+{
+  "id": "red-study",
+  "title": "주홍색 연구",
+  "englishTitle": "A Study in Scarlet",
+  "author": "Arthur Conan Doyle",
+  "year": 1887,
+  "description": "셜록 홈즈의 첫 번째 사건. 런던의 한 아파트에서 발견된 의문의 시체와 'RACHE'라는 수수께끼의 글자.",
+  "originalText": "/data/study-in-scarlet.txt",
+  "keyScenes": [
+    {
+      "id": "holmes-introduction",
+      "title": "셜록 홈즈와의 첫 만남",
+      "chapterRef": "CHAPTER I. MR. SHERLOCK HOLMES",
+      "originalText": "I confess that I was considerably startled by this fresh proof of the practical nature of my companion's theories...",
+      "gameContent": "왓슨이 홈즈의 추론 능력에 놀라며 처음으로 그의 실력을 목격하는 장면",
+      "keyElements": ["홈즈의 추론법", "왓슨의 놀라움", "베이커가 221B"]
+    },
+    {
+      "id": "crime-scene-discovery",
+      "title": "범죄 현장 발견",
+      "chapterRef": "CHAPTER III. THE LAURISTON GARDENS MYSTERY",
+      "originalText": "Across this bare space there was scrawled in blood-red letters a single word— RACHE.",
+      "gameContent": "로리스턴 가든 3번지에서 시체와 함께 발견된 'RACHE'라는 피로 쓰인 글자",
+      "keyElements": ["시체", "RACHE", "피로 쓰인 글자", "빈 집"],
+      "evidence": [
+        "외상 없는 시체",
+        "벽에 피로 쓰인 'RACHE'",
+        "여자의 반지",
+        "독에 의한 죽음"
+      ]
+    },
+    {
+      "id": "holmes-deduction",
+      "title": "홈즈의 추론",
+      "chapterRef": "CHAPTER II. THE SCIENCE OF DEDUCTION",
+      "originalText": "You sum up the difficulties of the situation succinctly and well",
+      "gameContent": "홈즈가 현장에서 관찰한 단서들을 바탕으로 추론을 전개하는 장면",
+      "keyElements": ["관찰", "추론", "과학적 방법"]
+    },
+    {
+      "id": "rache-revelation",
+      "title": "RACHE의 진실",
+      "chapterRef": "PART II",
+      "originalText": "I remembered a German being found in New York with RACHE written up above him, and it was argued at the time in the newspapers that the secret societies must have done it.",
+      "gameContent": "범인이 경찰을 혼란시키기 위해 독일어로 보이는 'RACHE'를 썼다는 진실",
+      "keyElements": ["범인의 계략", "독일어 위장", "경찰 혼란"]
+    }
+  ],
+  "characters": {
+    "holmes": {
+      "name": "셜록 홈즈",
+      "avatar": "H",
+      "description": "세계 최고의 자문 탐정. 관찰력과 추론 능력이 뛰어남",
+      "personality": "냉정하고 논리적, 때로는 오만하지만 정의로운",
+      "quotes": [
+        "관찰하라, 왓슨. 모든 것이 명확해질 것이다.",
+        "불가능한 것을 제거하면, 남은 것이 아무리 믿기 어려워도 그것이 진실이다.",
+        "세부사항이야말로 가장 중요한 것이다."
+      ]
+    },
+    "watson": {
+      "name": "존 왓슨 박사",
+      "avatar": "W", 
+      "description": "홈즈의 충실한 동반자이자 의사. 아프가니스탄 전쟁 참전용사",
+      "personality": "성실하고 충성스러우며 상식적인 판단력을 가진",
+      "quotes": [
+        "홈즈, 당신은 정말 놀라운 사람입니다!",
+        "이해할 수 없군요. 어떻게 그런 결론에 도달하셨나요?",
+        "의학적으로 봤을 때..."
+      ]
+    },
+    "lestrade": {
+      "name": "레스트레이드 경감",
+      "avatar": "L",
+      "description": "스코틀랜드 야드의 형사. 홈즈의 능력을 인정하지만 때로는 질투심을 보임",
+      "personality": "성실하지만 고집이 세고, 전통적인 수사 방법을 선호",
+      "quotes": [
+        "홈즈 씨, 이번에는 당신의 도움이 필요합니다.",
+        "그런 추론이 가능하다니... 믿기 어렵군요.",
+        "증거가 있어야 체포할 수 있습니다."
+      ]
+    }
+  },
+  "gameFlow": {
+    "introduction": {
+      "scene": "베이커가 221B번지",
+      "setup": "왓슨이 홈즈와 함께 살게 된 지 얼마 되지 않은 시점",
+      "trigger": "레스트레이드의 급한 편지 도착"
+    },
+    "investigation": {
+      "phases": [
+        "현장 도착 및 첫 관찰",
+        "시체와 RACHE 발견", 
+        "증거 수집 및 분석",
+        "목격자 조사",
+        "홈즈의 추론 과정"
+      ]
+    },
+    "resolution": {
+      "revelation": "범인의 정체와 동기 밝혀짐",
+      "method": "독을 이용한 살인",
+      "motive": "과거의 복수"
+    }
+  },
+  "vocabulary": {
+    "victorianTerms": [
+      "hansom cab", "lodgings", "Scotland Yard", "constable",
+      "inspector", "deduction", "observation", "evidence"
+    ],
+    "forensicTerms": [
+      "post-mortem", "poison", "strychnine", "bloodstains",
+      "fingerprints", "footprints", "cigar ash"
+    ]
+  },
+  "atmosphere": {
+    "setting": "1880년대 런던, 가스등이 켜진 거리, 마차가 다니는 시대",
+    "mood": "미스터리하고 어두운 분위기, 빅토리아 시대의 우아함과 위험이 공존",
+    "weather": "런던의 전형적인 안개 낀 날씨"
+  }
+}
