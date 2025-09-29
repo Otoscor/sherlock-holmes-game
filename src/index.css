@@ -26,7 +26,7 @@
   }
 
   .chat-header {
-    @apply bg-sherlock-darker border-b border-sherlock-border p-4 flex items-center justify-between;
+    @apply bg-sherlock-darker border-b border-sherlock-border p-4 flex flex-col space-y-3;
   }
 
   .chat-messages {

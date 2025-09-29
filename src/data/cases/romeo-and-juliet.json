@@ -1,0 +1,218 @@
+{
+  "id": "romeo-and-juliet",
+  "title": "로미오와 줄리엣",
+  "author": "윌리엄 셰익스피어",
+  "description": "베로나의 두 원수 가문 사이에서 피어난 비극적 사랑 이야기",
+  "setting": {
+    "time": "중세 후기 이탈리아",
+    "location": "베로나",
+    "atmosphere": "로맨틱하면서도 비극적인"
+  },
+  
+  "characters": {
+    "montague_family": {
+      "romeo": {
+        "name": "로미오",
+        "role": "몬태규 가의 아들",
+        "personality": "열정적이고 로맨틱한 젊은 귀족",
+        "avatar": "R"
+      },
+      "montague": {
+        "name": "몬태규",
+        "role": "로미오의 아버지",
+        "personality": "권위적이지만 아들을 사랑하는 가장",
+        "avatar": "M"
+      },
+      "benvolio": {
+        "name": "벤볼리오",
+        "role": "로미오의 사촌이자 친구",
+        "personality": "평화주의적이고 현명한",
+        "avatar": "B"
+      }
+    },
+    "capulet_family": {
+      "juliet": {
+        "name": "줄리엣",
+        "role": "캐퓰릿 가의 딸",
+        "personality": "순수하면서도 의지가 강한 소녀",
+        "avatar": "J"
+      },
+      "capulet": {
+        "name": "캐퓰릿",
+        "role": "줄리엣의 아버지",
+        "personality": "전통적이고 고집이 센 가장",
+        "avatar": "C"
+      },
+      "nurse": {
+        "name": "유모",
+        "role": "줄리엣의 유모",
+        "personality": "따뜻하고 수다스러운",
+        "avatar": "N"
+      },
+      "tybalt": {
+        "name": "티볼트",
+        "role": "줄리엣의 사촌",
+        "personality": "호전적이고 가문의 명예를 중시하는",
+        "avatar": "T"
+      }
+    },
+    "neutral": {
+      "friar_lawrence": {
+        "name": "로렌스 신부",
+        "role": "프란체스코회 수사",
+        "personality": "지혜롭고 자비로운",
+        "avatar": "F"
+      },
+      "mercutio": {
+        "name": "머큐쇼",
+        "role": "로미오의 친구",
+        "personality": "재치 있고 장난기 많은",
+        "avatar": "Me"
+      },
+      "prince": {
+        "name": "에스컬러스 공",
+        "role": "베로나의 영주",
+        "personality": "공정하고 권위적인",
+        "avatar": "P"
+      }
+    }
+  },
+
+  "story_progression": {
+    "act1": {
+      "title": "운명적 만남",
+      "scenes": [
+        {
+          "id": "street_fight",
+          "title": "거리의 싸움",
+          "description": "몬태규 가와 캐퓰릿 가의 하인들이 베로나 거리에서 싸운다",
+          "keywords": ["싸움", "원수", "베로나", "가문", "갈등"],
+          "progress": 10
+        },
+        {
+          "id": "romeo_melancholy",
+          "title": "로미오의 우울",
+          "description": "로미오가 로잘린에 대한 짝사랑으로 괴로워한다",
+          "keywords": ["로미오", "사랑", "우울", "로잘린"],
+          "progress": 20
+        },
+        {
+          "id": "capulet_party",
+          "title": "캐퓰릿 가의 파티",
+          "description": "로미오와 줄리엣이 가면무도회에서 첫 만남을 갖는다",
+          "keywords": ["파티", "가면무도회", "만남", "첫눈에", "사랑"],
+          "progress": 30
+        }
+      ]
+    },
+    "act2": {
+      "title": "비밀스러운 사랑",
+      "scenes": [
+        {
+          "id": "balcony_scene",
+          "title": "발코니 장면",
+          "description": "로미오와 줄리엣이 발코니에서 사랑을 고백한다",
+          "keywords": ["발코니", "사랑고백", "달", "별", "맹세"],
+          "progress": 50
+        },
+        {
+          "id": "secret_marriage",
+          "title": "비밀 결혼",
+          "description": "로렌스 신부의 주례로 둘이 비밀리에 결혼한다",
+          "keywords": ["결혼", "비밀", "로렌스", "신부", "교회"],
+          "progress": 60
+        }
+      ]
+    },
+    "act3": {
+      "title": "비극의 시작",
+      "scenes": [
+        {
+          "id": "mercutio_death",
+          "title": "머큐쇼의 죽음",
+          "description": "티볼트와 머큐쇼가 결투하여 머큐쇼가 죽는다",
+          "keywords": ["결투", "죽음", "머큐쇼", "티볼트", "복수"],
+          "progress": 70
+        },
+        {
+          "id": "tybalt_death",
+          "title": "티볼트의 죽음",
+          "description": "로미오가 복수로 티볼트를 죽인다",
+          "keywords": ["복수", "티볼트", "죽음", "추방"],
+          "progress": 80
+        }
+      ]
+    },
+    "act4_5": {
+      "title": "비극적 결말",
+      "scenes": [
+        {
+          "id": "fake_death",
+          "title": "가짜 죽음",
+          "description": "줄리엣이 로렌스 신부의 약을 마시고 죽은 척한다",
+          "keywords": ["가짜죽음", "약", "계획", "무덤"],
+          "progress": 90
+        },
+        {
+          "id": "tragic_end",
+          "title": "비극적 결말",
+          "description": "로미오와 줄리엣이 무덤에서 함께 죽는다",
+          "keywords": ["죽음", "무덤", "독", "단검", "비극"],
+          "progress": 100
+        }
+      ]
+    }
+  },
+
+  "game_mechanics": {
+    "player_role": "multiple_choice",
+    "available_characters": ["romeo", "juliet"],
+    "story_branches": [
+      {
+        "id": "happy_ending",
+        "title": "해피엔딩",
+        "condition": "두 가문을 화해시키고 공개적으로 결혼",
+        "difficulty": "hard"
+      },
+      {
+        "id": "escape_together",
+        "title": "함께 도피",
+        "condition": "베로나를 떠나 다른 곳에서 새 삶 시작",
+        "difficulty": "medium"
+      },
+      {
+        "id": "original_tragedy",
+        "title": "원작 비극",
+        "condition": "원작과 같은 비극적 결말",
+        "difficulty": "easy"
+      }
+    ]
+  },
+
+  "key_quotes": [
+    {
+      "character": "romeo",
+      "quote": "하지만 부드럽게! 저 창에서 무슨 빛이 비치는가? 그것은 동쪽이고, 줄리엣은 태양이다!",
+      "context": "balcony_scene"
+    },
+    {
+      "character": "juliet", 
+      "quote": "로미오, 로미오, 어찌하여 당신은 로미오인가? 당신의 아버지를 부인하고 당신의 이름을 거부하라.",
+      "context": "balcony_scene"
+    },
+    {
+      "character": "friar_lawrence",
+      "quote": "하늘이 이 거룩한 행위를 미소로 보아주시기를, 후에 우리를 슬픔으로 꾸짖지 않으시도록.",
+      "context": "secret_marriage"
+    }
+  ],
+
+  "themes": [
+    "사랑과 증오의 대립",
+    "운명과 자유의지",
+    "젊음과 충동성",
+    "가족과 개인의 갈등",
+    "죽음과 희생"
+  ]
+}
+

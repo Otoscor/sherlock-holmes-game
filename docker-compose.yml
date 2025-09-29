@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  # 프론트엔드 (React + Vite)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_BASE_URL=http://backend:3001
+      - VITE_GEMINI_API_KEY=${VITE_GEMINI_API_KEY}
+      - VITE_AI_MODEL=${VITE_AI_MODEL:-gemini-1.5-flash}
+      - VITE_AI_PROVIDER=${VITE_AI_PROVIDER:-gemini}
+    depends_on:
+      - backend
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    networks:
+      - sherlock-network
+
+  # 백엔드 (Node.js + Express)
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - AI_MODEL=${AI_MODEL:-gemini-1.5-flash}
+      - AI_PROVIDER=${AI_PROVIDER:-gemini}
+    volumes:
+      - ./server/src:/app/src
+    networks:
+      - sherlock-network
+
+networks:
+  sherlock-network:
+    driver: bridge
+
+volumes:
+  node_modules_frontend:
+  node_modules_backend:
+
+
+
+
